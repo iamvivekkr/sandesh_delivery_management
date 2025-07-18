@@ -1,7 +1,7 @@
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
   (import.meta.env.MODE === 'production'
-    ? 'https://sandesh-delivery-management.onrender.com/api'
+    ? 'https://manage.sandeshservice.com/api'
     : 'http://localhost:3001/api');
 
 class ApiService {
