@@ -1,4 +1,8 @@
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.MODE === 'production'
+    ? 'https://sandesh-delivery-management.onrender.com/api'
+    : 'http://localhost:3001/api');
 
 class ApiService {
   private token: string | null = null;
